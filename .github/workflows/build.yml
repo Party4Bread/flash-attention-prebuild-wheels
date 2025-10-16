@@ -29,13 +29,13 @@ jobs:
       fail-fast: false
       matrix:
         flash-attn-version: 
-          - "2.6.3"
-          - "2.7.4.post1"
+          # - "2.6.3"
+          # - "2.7.4.post1"
           - "2.8.3"
         python-version:
           # - "3.9"
-          - "3.10"
-          - "3.11"
+          # - "3.10"
+          # - "3.11"
           - "3.12"
           - "3.13"
         torch-version: 
@@ -50,7 +50,7 @@ jobs:
           - "12.6.3"
           - "12.8.1"
           # - "12.9.1"
-          - "13.0.2"
+          - "13.0.1"
         exclude:
           # torch < 2.2 does not support Python 3.12
           - python-version: "3.12"
